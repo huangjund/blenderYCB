@@ -1,0 +1,53 @@
+{
+  "shuffle_seed": "OFF",
+  "numpy_seed": 19,
+  "blenderproc_seed": "69",
+  "urdf_path": "data/Assem_DexCo/urdf/Assem_DexCo.urdf",
+  "models_path": "data/objs_custom_data",
+  "num_pts": 6400,
+  "light": {
+    "type": "POINT",
+    "energy": 1000,
+    "location": [0, 2, -2]
+  },
+  "camera": {
+    "px": 435.6557922363281,
+    "py": 434.4980163574219,
+    "u0": 316.09930419921875,
+    "v0": 234.21377563476562,
+    "h": 480,
+    "w": 640,
+    "randomize_params_percent": 5.0,
+    "location":{
+      "xyz": [0, 0.038513, -0.15584],
+      "rpy": [-200, 0, 0]
+    },
+    "range": {
+      "xyz_lower": [0,0.02,-0.14],
+      "xyz_upper": [0,0.08,-0.19],
+      "rpy_lower": [-180, -5, -5],
+      "rpy_upper": [-220, 5, 5]
+    }
+  },
+  "rendering": {
+    "max_num_samples": 32,
+    "denoiser": "OPTIX"
+  },
+  "scene": {
+    "path": "data/sun2012pascalformat",
+    "room_size_multiplier_min": 1,
+    "room_size_multiplier_max": 2,
+    "room_size": 0.6
+  },
+  "dataset": {
+    "save_path": "./output_math",
+    "scenes_per_run": 5000,
+    "images_per_scene": 4
+  },
+  "object":{
+    "motion_range_bound_low": [-25, -30, -40, -25, -30, -40],
+    "motion_range_bound_high": [25, 70, 60, 25, 70, 60],
+    "direction": [1,-1,-1,1,-1,-1],
+    "collision_w": [2,1]
+  }
+}
